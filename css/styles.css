@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container .semaforo {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/img/metal-preto.jpg");
+  width: 350px;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 65px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 3px black;
+}
+.container .semaforo .red-signal {
+  background-image: linear-gradient(to top, rgb(167, 25, 25), rgb(27, 0, 0));
+  height: 200px;
+  width: 200px;
+  border: 3px solid rgb(63, 2, 2);
+  border-radius: 50%;
+}
+.container .semaforo .red-signalOn {
+  background-image: linear-gradient(to top, red, rgb(146, 0, 0));
+  height: 200px;
+  width: 200px;
+  border: 3px solid rgb(63, 2, 2);
+  border-radius: 50%;
+}
+
+.container .semaforo .yellow-signal {
+  background-image: linear-gradient(to top, rgb(163, 138, 24), rgb(22, 21, 3));
+  width: 200px;
+  height: 200px;
+  border: 3px solid rgb(26, 23, 2);
+  border-radius: 50%;
+}
+.container .semaforo .yellow-signalOn {
+  background-image: linear-gradient(
+    to top,
+    rgb(247, 203, 7),
+    rgb(167, 160, 29)
+  );
+  width: 200px;
+  height: 200px;
+  border: 3px solid rgb(26, 23, 2);
+  border-radius: 50%;
+}
+.container .semaforo .green-signal {
+  background-image: linear-gradient(to top, rgb(54, 117, 18), rgb(7, 17, 1));
+  width: 200px;
+  height: 200px;
+  border: 3px solid rgb(12, 39, 2);
+  border-radius: 50%;
+}
+.container .semaforo .green-signalOn {
+  background-image: linear-gradient(to top, rgb(86, 204, 17), rgb(48, 104, 13));
+  width: 200px;
+  height: 200px;
+  border: 3px solid rgb(12, 39, 2);
+  border-radius: 50%;
+}
+
+.btns {
+  list-style: none;
+  display: inline;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.container-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-list {
+  text-align: center;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  color: aliceblue;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  background-image: url("/img/metal-preto.jpg");
+  transition: 1s;
+}
+
+#btn-vermelho:hover {
+  width: 110px;
+  height: 55px;
+  color: red;
+  font-size: 20px;
+  border: 1px solid red;
+  border-radius: 30px;
+  background-image: url("/img/iron-texture.jpg");
+}
+
+#btn-amarelo:hover {
+  width: 110px;
+  height: 55px;
+  color: rgb(238, 234, 11);
+  font-size: 20px;
+  border: 1px solid rgb(238, 234, 11);
+  border-radius: 30px;
+  background-image: url("/img/iron-texture.jpg");
+}
+
+#btn-verde:hover {
+  width: 110px;
+  height: 55px;
+  color: rgb(43, 255, 0);
+  font-size: 20px;
+  border: 1px solid rgb(43, 255, 0);
+  border-radius: 30px;
+  background-image: url("/img/iron-texture.jpg");
+}
+
+#btn-auto:hover {
+  width: 110px;
+  height: 55px;
+  color: rgb(62, 30, 136);
+  font-size: 20px;
+  border: 1px solid rgb(62, 30, 136);
+  border-radius: 30px;
+  background-image: url("/img/iron-texture.jpg");
+}
